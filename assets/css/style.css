@@ -1,0 +1,50 @@
+
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    height: 28vh;
+}
+button {
+    height: 25px;
+    width: 70px;
+    padding: 3px;
+}
+header .wrapper * {
+    display: inline-block;
+    vertical-align: top;
+    color: #4b4b69;
+}
+
+nav {
+    height: 140px;
+    width: 790px;
+    text-align: right;
+    color: #4b4b69;
+    font-family: "OpenSans","Montserrat", "Avenir";
+    padding-top: 10px;
+    border: 0;
+    text-shadow: 0 1px 0 #fff;
+    text-transform: uppercase;
+ }
+
+ .mainbody {
+    display: block;
+    width: 67%;
+    height: 73vh;
+    position: absolute;
+    margin-top: -4px;
+    border-bottom: 4px solid transparent;
+    background-image: url("../images/chefpict.jpg");
+    background-size: cover;
+    
+}
+
+.aside {
+    width: 400px;
+    height: 550px;
+    border: 1px solid #5C1E1E;
+    margin-right: 10px;
+    float: right;
+    vertical-align: top;
+}
