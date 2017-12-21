@@ -26,24 +26,3 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-.Silo {
-  width: 80%;
-  margin: auto;
-  margin-top: 15px;
-
-}
-
-.SubSilo { 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.Section {
-  border: 2px solid black;
-  box-shadow: 2px 5px 20px 5px blue;
-}
