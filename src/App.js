@@ -10,13 +10,11 @@ import './App.css';
 const App = () =>
   <Router>
     <div>
-
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/newchef" component={NewChef} />
-        {/* <Route component={NoMatch} /> */}
       </Switch>
     </div>
   </Router>;

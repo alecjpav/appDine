@@ -1,3 +1,11 @@
+h3, h5 {
+  margin-left: 10px;
+}
+
+h6 {
+  font-weight: bolder;
+}
+
 .Header h1 {
   color: rgb(57, 77, 77);
   vertical-align: bottom;
@@ -60,6 +68,7 @@ input {
   width: 75%;
   margin: auto;
   margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 form {
@@ -89,9 +98,14 @@ input[type=button], input[type=submit], input[type=reset] {
 input[type=range] {
   background-color: #4CAF50;
   border: 1px solid #ccc;
-  margin: 4px 2px;
+  margin-left: 20px;
+  width: 360px;
 }
 
 form h6, form input {
   margin-left: 10px;
+}
+
+#dobInput {
+  width: 30%;
 }
