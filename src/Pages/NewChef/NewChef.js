@@ -4,29 +4,54 @@ import '../../App.css';
 
 class NewChef extends Component {
 
+    constructor() {
+        super();
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        
+        // fetch('/api/form-submit-url', {
+        //   method: 'POST',
+        //   body: data,
+        // });
+      }
+
     render () {
         return(
             <div>
                 
                 <div className="MainWindow">
-                    <form>
-                        <h6>First Name</h6>
-                        <input type="text" name="firstName" />
-                        <h6>Last Name</h6>
-                        <input type="text" name="lastName" />
-                        <h6>Email</h6>
-                        <input type="email" name="email" />
-                        <h6>Dob</h6>
-                        <input type="date" name="bday" id="dobInput" />
+                    <form onSubmit={this.handleSubmit}>
 
-                        <h3>For these statements, rate how much they are true for yourself on a scale of 0-10. </h3> <br /> 
-                        <h5>I am comfortable working infront of others.</h5>
-                        <input type="range" name="perform" min="0" max="10" /> <br />
-                        <h5>I maintain a clean environment while I work.</h5>
-                        <input type="range" name="points" min="0" max="10" />
-                        <h5>I am efficient.</h5>
-                        <input type="range" name="points" min="0" max="10" />
-                        <h5></h5>
+                        <h6>User</h6>
+                        <input type="text"
+                        name="userName"
+                        onChange={this.handleUserChange} />
+
+                        <h6>Last Name</h6>
+                        <input type="text"
+                        name="password" 
+                        onChange={this.handlePasswordChange} />
+
+                        <h6>Email</h6>
+                        <input type="email" 
+                        name="email"
+                        onChange={this.handleEmailChange} />
+
+                        <h6>Dob</h6>
+                        <input type="date"
+                        name="bday"
+                        onChange={this.handleExpChange} />
+
+                        <h6>How many years of experience do you have?</h6>
+                        <input type="number"
+                        name="exp" 
+                        onChange={this.handleExpChange} />
+
+                        <input type="submit" value="submit" />
                     </form>
                 </div>
 
