@@ -51,6 +51,7 @@ class NewChef extends Component {
                         name="exp" 
                         onChange={this.handleExpChange} />
 
+                        <br />
                         <input type="submit" value="submit" />
                     </form>
                 </div>
