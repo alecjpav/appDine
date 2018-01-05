@@ -6,19 +6,17 @@ import '../../App.css';
 class Login extends Component {
 
 
-    handleLogin = () => console.log('yes')
+    handleLogin = () => console.log('yes');
 
 
     render() {
         return (
             <div>
                 <div className='Header'>
-                    <h1>
-                        Homestaurant, we're here
-                    </h1>
+                    <h1> Homestaurant, we're here </h1>
                 </div>
 
-            <LoginForm />
+            <LoginForm onClick={this.handleLogin}/>
 
             </div>
         )

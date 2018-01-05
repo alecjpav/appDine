@@ -6,12 +6,12 @@ class LoginForm extends Component {
             <form>
 
                 <input
-                    placehodler="User Name"
+                    placeholder="User Name"
                 />
 
                 <input
                     type="password"
-                    placehodler="User Name"
+                    placeholder="User Name"
                 />
 
                 <button type="submit">Log in</button>
