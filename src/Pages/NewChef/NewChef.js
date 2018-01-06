@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Axios from 'axios';
 
 import '../../App.css';
 
@@ -24,7 +25,16 @@ class NewChef extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state)
+
+        // Axios.post('/user', {
+        //     this.state
+        //   })
+        //   .then(function (response) {
+        //     console.log(response);
+        //   })
+        //   .catch(function (error) {
+        //     console.log(error);
+        //   });
     }
 
     render () {
