@@ -8,9 +8,19 @@ class Home extends Component {
             
             <div className='Silo'>
 
-                <div className='Title'> 
-                    <h1>We came, we cooked, we served... You never left your living room.</h1>
-                </div>
+                <header className="header">
+                <nav>
+                    <div class="container">
+                        <div>
+                            <ul>
+                                <li> <a href="/">Home</a> </li>
+                                <li> <a href="./../NewChef">Diner Login</a> </li>
+                                <li> <a href="./../Order">Order Now!</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                </header>
 
                 <div className='SubSilo'>
                     <div className='Section'>

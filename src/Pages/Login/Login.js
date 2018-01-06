@@ -15,9 +15,9 @@ class Login extends Component {
                 <div className='Header'>
                     <h1> Homestaurant, we're here </h1>
                 </div>
-
-            <LoginForm onClick={this.handleLogin}/>
-
+                <div className='SubSilo'>
+                    <LoginForm onClick={this.handleLogin}/>
+                </div>
             </div>
         )
     }

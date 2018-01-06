@@ -11,7 +11,7 @@ class LoginForm extends Component {
 
                 <input
                     type="password"
-                    placeholder="User Name"
+                    placeholder="Password"
                 />
 
                 <button type="submit">Log in</button>
