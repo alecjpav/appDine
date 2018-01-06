@@ -18,6 +18,37 @@ h6 {
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul li, a {
+  display: inline;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+a:hover, a:active, a:link {
+  text-decoration: none;
+  color: rgb(216, 186, 186);
+}
+/* ---------Coloring---------------- */
+
+.colorBG_Dark  {
+  background-color: rgb(39, 14, 6);
+}
+
+/* ----------------------------------- */
 .Silo {
   width: 65%;
   margin: auto;
@@ -30,8 +61,7 @@ h6 {
   flex-direction: row;
   justify-content: space-around;
 
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 30px;
 }
 
 .Section {

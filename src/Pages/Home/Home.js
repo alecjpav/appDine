@@ -8,18 +8,20 @@ class Home extends Component {
             
             <div className='Silo'>
 
-                <header className="header">
-                <nav>
-                    <div class="container">
+                <header className='header'>
+
+                <nav className='SubSilo colorBG_Dark'>
+                    <div class='container'>
                         <div>
                             <ul>
                                 <li> <a href="/">Home</a> </li>
-                                <li> <a href="./../NewChef">Diner Login</a> </li>
+                                <li> <a href="./../Login">Diner Login</a> </li>
                                 <li> <a href="./../Order">Order Now!</a> </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+
                 </header>
 
                 <div className='SubSilo'>
