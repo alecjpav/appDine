@@ -5,54 +5,70 @@ import '../../App.css';
 class NewChef extends Component {
 
     constructor() {
-        super();
-        this.handleSubmit = this.handleSubmit.bind(this);
-      }
+      super();
+      
+      this.state = {
+        firstName:'',
+        lastName:'',
+        email:'',
+        dob:'',
+        exp:''
+      };
+    }
 
-    handleSubmit(event) {
-        event.preventDefault();
-        const data = new FormData(event.target);
-        
-        // fetch('/api/form-submit-url', {
-        //   method: 'POST',
-        //   body: data,
-        // });
-      }
+    onChange = (e) => {
+        const state = this.state
+        state[e.target.name] = e.target.value;
+        this.setState(state);
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state)
+    }
 
     render () {
+        const { firstName, lastName, email, dob, exp } =this.state;
         return(
             <div>
                 
                 <div className="MainWindow">
                     <form onSubmit={this.handleSubmit}>
 
-                        <h6>User</h6>
+                        <h6>First Name</h6>
                         <input type="text"
-                        name="userName"
-                        onChange={this.handleUserChange} />
+                        name="firstName" 
+                        value={firstName} 
+                        onChange={this.onChange} />
 
                         <h6>Last Name</h6>
                         <input type="text"
-                        name="password" 
-                        onChange={this.handlePasswordChange} />
+                        name="lastName" 
+                        value={lastName} 
+                        onChange={this.onChange} />
 
                         <h6>Email</h6>
                         <input type="email" 
-                        name="email"
-                        onChange={this.handleEmailChange} />
+                        name="email" 
+                        value={email} 
+                        onChange={this.onChange} />
 
                         <h6>Dob</h6>
                         <input type="date"
-                        name="bday"
-                        onChange={this.handleExpChange} />
+                        name="dob" 
+                        value={dob} 
+                        onChange={this.onChange} />
 
                         <h6>How many years of experience do you have?</h6>
                         <input type="number"
                         name="exp" 
-                        onChange={this.handleExpChange} />
-
+                        value={exp} 
+                        onChange={this.onChange} />
+                        
                         <br />
-                        <input type="submit" value="submit" />
+                        <input type="submit"
+                        value="submit" />
+                        
                     </form>
                 </div>
 
